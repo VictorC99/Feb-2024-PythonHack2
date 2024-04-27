@@ -1,0 +1,13 @@
+<!-- weather_app/templates/weather.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather for {{ weather_data.name }}</h1>
+    <p>Temperature: {{ weather_data.main.temp }}°C</p>
+    <p>Weather: {{ weather_data.weather.0.main }}</p>
+    <p>Description: {{ weather_data.weather.0.description }}</p>
+</body>
+</html>
